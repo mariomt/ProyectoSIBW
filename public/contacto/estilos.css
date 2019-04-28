@@ -1,0 +1,245 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16pt;
+    font-family: 'serif',Arial;
+}
+
+.wrap{
+    width: 90%;
+    max-width: 500px;
+
+    margin: 20px auto;
+}
+
+.wrap form{
+
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 3px;
+    border-top: 4px solid blue;
+}
+.titulo {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+/*Formato a los cuadros de texto*/
+.wrap form input[type="text"],
+.wrap form input[type="email"],
+.wrap form input[type="password"],
+.wrap form textarea{
+    border: 1px solid #34888c;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color:#141938;
+}
+
+/*Formato al colocarse en un cuadro de texto*/
+.wrap form input[type="text"]:focus,
+.wrap form input[type="email"]:focus,
+.wrap form input[type="password"]:focus,
+.wrap form textarea:focus {
+    border: 2px solid #34888c;
+    padding: 15px;
+}
+
+/*Limitar el ancho y alto del textarea*/
+.wrap form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    min-height: 150px;
+}
+
+/*Formato a las alertas*/
+.alert{
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/*Formato alerta de error*/
+.alert.error{
+    background: #F2DEDE;
+    border: 1px solid #34888c;
+    color:#BB1F35;
+}
+
+/*Formato alerta de success*/
+.alert.success{
+    background: #4CAF50;
+
+}
+
+/*Formato al Boton*/
+.wrap .btnEnviar,
+.wrap form input[type="submit"]{
+    padding: 15px;
+    background: blue;
+    color: #E1E9FA;
+    font-size: 1em;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    width: 100px;
+    border: none;
+    float: right;
+    cursor: pointer;
+
+}
+
+.wrap form input[type="submit"]:hover{
+    background: darkblue;
+
+}
+
+
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.contenedor{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+/*----Header----*/
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header img {
+    max-width: 400px;
+    min-width: 100px;
+}
+
+
+
+/*----------------------------*/
+/*----Barra de navegación----*/
+/*--------------------------*/
+nav{
+    width: 100%;
+    border-bottom: 1px solid #D8D6D5;
+    border-top: 2px solid #D8D6D5;
+    background: #fff;
+    height: 70px;
+    padding-left: 20px;
+    display: flex;
+    align-items:center;
+    box-shadow: 1px 7px 25px -8px rgba(0,0,0,0.5); 
+    
+
+}
+
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+    color: #666;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: #0A0A0A;
+}
+.menu-fixed {
+    position: fixed;
+    z-index: 1020;
+    top: 0;
+}
+
+/*----------------------------*/
+/*----Footer----*/
+/*--------------------------*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 1px solid #D8D6D5;
+    border-top: 2px solid #D8D6D5;
+    background: #fff;
+    height: 70px;
+    padding-left: 20px;
+    display: flex;
+    align-items:center;
+    box-shadow: 1px 7px 25px -8px rgba(0,0,0,0.5); 
+    
+
+}
+
+footer .iconos{
+    color: rgba(0, 0, 0, .7);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav ul li{
+        list-style: none;
+        color: #666;
+        font-size: 14pt;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav ul li{
+        list-style: none;
+        color: #666;
+        font-size: 12pt;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+
+}
