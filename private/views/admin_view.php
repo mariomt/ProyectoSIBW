@@ -6,22 +6,23 @@
     </div>
 	<?php while ($event= mysqli_fetch_assoc($events_set)) { ?>
 		<section class="tarjeta">
-			<?php $v_date=f_getDate($event['DATE']); ?>
-			<div class="horario">
-				<div class="calendario">
-					<div class="mes">
-						<h4><?php echo $v_date['month'] ?></h4>
-					</div>
-					<div class="dia">
-						<p><strong><?php echo $v_date['day'] ?></strong></p>
-					</div>
-					<div class="anio">
-						<p><?php echo $v_date['year'] ?></p>
+			<div class="derecha">
+				<?php $v_date=f_getDate($event['DATE']); ?>
+				<div class="horario">
+					<div class="calendario">
+						<div class="mes">
+							<h4><?php echo $v_date['month'] ?></h4>
+						</div>
+						<div class="dia">
+							<p><strong><?php echo $v_date['day'] ?></strong></p>
+						</div>
+						<div class="anio">
+							<p><?php echo $v_date['year'] ?></p>
+						</div>
 					</div>
 				</div>
 			</div>
-
-
+			
 			<div class="info">
 				<h3><?php echo utf8_encode($event['TITLE']); ?></h3>
 				<p><?php echo utf8_encode($event['DESCRIPTION']); ?></p>
